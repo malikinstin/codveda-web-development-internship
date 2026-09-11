@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fredrick Sika | Portfolio</title>
+  <meta name="description" content="Portfolio of Fredrick Sika, Computer Science student at the University of Cape Coast.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo">Fredrick Sika</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / INTRO SECTION -->
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container hero-inner">
+      <p class="hero-greeting">Hi, I'm Fredrick 👋</p>
+      <h1>Computer Science student<br>at the University of Cape Coast</h1>
+      <p class="hero-text">
+        I like building things with code — from a command-line banking
+        simulator to relational databases from scratch — and I'm always
+        picking up something new on the side.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">See my projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <img src="./images/fredrick.jpg" alt="Fredrick Sika" class="profile-photo">
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm a Computer Science student at the University of Cape Coast,
+          Ghana, working through core systems, databases, and software
+          engineering coursework. I learn best by building things end to
+          end rather than only reading about them.
+        </p>
+        <p>
+          Outside of class, I'm currently picking up TypeScript and
+          studying Mandarin Chinese (working toward HSK 3).
+        </p>
+
+        <!-- SKILLS LIST -->
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>C++</li>
+          <li>Python</li>
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>SQL Server</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">
+        Projects
+        <svg class="squiggle" width="120" height="12" viewBox="0 0 120 12" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 8 Q 15 -2, 30 8 T 60 8 T 90 8 T 118 8" stroke="#66A3BF" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card">
+          <h3>Snowflake's ATM</h3>
+          <p>
+            A command-line banking system built to learn C++ from the
+            ground up — data types, control flow, and the compile-run
+            cycle. Handles balance checks, deposits, and withdrawals with
+            basic input validation.
+          </p>
+          <div class="tags">
+            <span>C++</span>
+            <span>OOP</span>
+            <span>Console I/O</span>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card">
+          <h3>University &amp; Sales Databases</h3>
+          <p>
+            Two relational databases built from scratch — joins,
+            subqueries, views, stored procedures, and window functions,
+            normalized through third normal form.
+          </p>
+          <div class="tags">
+            <span>SQL Server</span>
+            <span>T-SQL</span>
+            <span>Database Design</span>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card">
+          <h3>Electronics Lab Reports</h3>
+          <p>
+            Formatted lab documentation for diode, op-amp, and BJT
+            experiments, with hand-built SVG circuit diagrams and
+            oscilloscope measurement write-ups.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SVG</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-text">
+        I'm open to internships, collaboration, and conversations about
+        databases, systems programming, or Mandarin study tips.
+      </p>
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Say hello..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <!-- DIRECT LINKS -->
+      <div class="direct-links">
+        <a href="mailto:fredrick.sika@example.com">sikafredrick5@gmail.com</a>
+        <a href="https://github.com/example" target="_blank" rel="noopener">github.com/malikinstin</a>
+        <a href="https://linkedin.com/in/example" target="_blank" rel="noopener">linkedin.com/in/fredrick-sika</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Fredrick Sika. Built with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
