@@ -6,7 +6,9 @@ menuToggle.addEventListener("click", function () {
 
     if (navMenu.classList.contains("active")) {
         menuToggle.textContent = "✕";
+        menuToggle.setAttribute("aria-label", "Close navigation menu");
     } else {
         menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
     }
 });
