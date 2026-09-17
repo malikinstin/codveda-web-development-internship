@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan the Day — To-Do</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="app-card" id="app">
+        <header class="app-header">
+            <h1 class="app-title">My to-do list</h1>
+            <p class="app-date" id="today-date"> </p>
+        </header>
+
+        <form class="task-form" id="task-form">
+            <input type="text" id="task-input" class="task-input" placeholder="What do you need to do?" name="task" autocomplete="off"/>
+            <button type="submit" class="add-btn" id="add-btn">Add task</button>
+        </form>
+
+
+        <ul class="task-list" id="task-list">
+            <li class="empty-state" id="empty-state">
+                Nothing here yet. Add your first task.
+            </li>
+            <li class="task-item">
+            </li>
+        </ul>
+
+        <footer class="app-footer">
+        <span class="tasks-count" id="tasks-count">0 tasks left</span>
+        <button type="button" class="clear-btn" id="clear-completed">Clear done</button>
+    </footer>
+    </main>
+
+    
+
+<script src="./script.js"></script>
+</body>
+</html>

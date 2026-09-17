@@ -1,0 +1,225 @@
+/* CSS Variables for colors and design */
+:root {
+        --soft-teal: #78B9B5; 
+        --teal: #0F828C;
+        --navy: #065084;
+        --indigo: #320A6B;
+
+        --mist: #F2FAF9;
+        --ink: #12203A;
+        --muted: #5C7488;
+
+        --radius: 18px;
+        --shadow: 0 30px 60px -25px rgba(50, 10, 107, 0.45);
+}
+
+
+/* RESET AND BODY */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        font-family: "Inter", sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at 30% 20%, var(--navy) 0%, var(--indigo) 70%);
+    }
+
+    /* App Card */
+    .app-card {
+        width: 100%;
+        max-width: 420px;
+        background: var(--mist);
+        border-radius: var(--radius);
+        border-top: 4px solid var(--teal);
+        padding: 32px 28px 24px;
+        box-shadow: var(--shadow);
+    }
+
+    .app-header {
+        margin-bottom: 24px;
+}
+
+.app-title {
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+        font-size: clamp(1.9rem, 3vw, 3rem);
+        color: var(--indigo);
+        line-height: 1.15;
+}
+
+.app-date {
+    margin-top: 4px;
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    color: var(--muted);
+}
+
+.task-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.task-input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1.5px solid rgba(15, 130, 140, 0.25);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: #fff;
+}
+
+.task-input:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 1px;
+}
+
+.add-btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: var(--teal);
+    color: var(--mist);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.add-btn:hover {
+    background: var(--indigo);
+}
+
+.add-btn:focus-visible {
+    outline: 2px solid var(--indigo);
+    outline-offset: 2px;
+}
+
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 4px;
+    border-bottom: 1px solid rgba(15, 130, 140, 0.1);
+}
+
+.task-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--ink);
+}
+
+
+.complete-btn {
+    border: none;
+    background: transparent;
+    color: var(--teal);
+    padding: 6px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.complete-btn:hover {
+    color: var(--ink);
+}
+
+.delete-btn {
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 4px 4px;
+    transition: color 0.15s ease;
+}
+
+.edit-btn {
+    border: none;
+    background: transparent;
+    padding: 4px 4px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: rgba(15, 130, 140, 0.12);
+color: var(--ink);
+}
+
+.delete-btn:hover {
+color: var(--indigo);
+}
+
+.task-item.completed .task-text {
+    color: var(--muted);
+    text-decoration: line-through;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 20px 8px;
+}
+
+/*Footer*/
+.app-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(15, 130, 140, 0.15);
+    padding-top: 14px;
+}
+
+.tasks-count {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.clear-btn {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 0.85rem;
+    color: var(--teal);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clear-btn:hover {
+    color: var(--indigo);
+    text-decoration: underline;
+}
+
+/* RESPONSIVE: small screens */
+@media (max-width: 380px) {
+    .task-form {
+    flex-direction: column;
+    }
+
+    .app-card {
+        padding: 26px 20px 20px;
+    }
+}
