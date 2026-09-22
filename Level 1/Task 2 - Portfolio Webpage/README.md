@@ -112,5 +112,9 @@ Task 2 - Portfolio Webpage/
 │
 ├── images/
 │   └── fredrick.jpg
+|
+├── output/
+|   ├── desktop.png
+|   ├── mobile.png
 │
 └── README.md

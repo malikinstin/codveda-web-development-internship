@@ -62,6 +62,6 @@ Task 2 - To-Do List App/
 ├── style.css
 ├── script.js
 ├── README.md
-└── screenshots/
+└── output/
     ├── desktop.png
     └── mobile.png

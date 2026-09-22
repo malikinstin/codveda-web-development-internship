@@ -38,6 +38,9 @@ Zan'zol is the last survivor of a tribe capable of bending Ascadium — the livi
     ├── world-visual.jpg         # World section visual
     ├── zanzol-screenshot.png    # Gameplay screenshot 1
     └── zanzol-screenshot1.png   # Gameplay screenshot 2
+└── assets/
+    └── desktop.png
+    └── mobile.png
 ```
 
 ## Getting Started

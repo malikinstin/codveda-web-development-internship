@@ -118,5 +118,15 @@ Task 1 - Simple Static Website/
 │   ├── github.png
 │   ├── linkedin-logo.png
 │   └── X.png
+|
+├── output/
+|   ├── about-desktop.png
+|   ├── about-mobile.png
+|   ├── contact-desktop.png
+|   ├── contact-mobile.png
+|   ├── games-desktop.png
+|   ├── games-mobile.png
+|   ├── index-desktop.png
+|   ├── index-mobile.png
 │
 └── README.md
